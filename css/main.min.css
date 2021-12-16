@@ -1,0 +1,223 @@
+@charset "UTF-8";
+.header {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.header__inner {
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 700;
+  background-color: antiquewhite;
+}
+
+.header__top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__address {
+  position: relative;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Noto Sans Display", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  padding-left: 30px;
+  padding-right: 86px;
+  font-family: "Noto Sans Display", sans-serif;
+}
+
+.header__address::before {
+  position: absolute;
+  left: 0;
+  top: -12px;
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-image: url("/app/images/местоположение 1.png");
+}
+
+.header__user {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 10px 0 0;
+}
+
+.header__user-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-left: 0;
+  margin-right: 0;
+  list-style: none;
+  font-family: "Noto Sans Display", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.header__user-list__link {
+  padding: 0;
+}
+
+.header__user-list-item {
+  margin: 0 10px 0 0;
+  width: 24px;
+  height: 24px;
+  padding-right: 0px;
+}
+
+.header__user span {
+  font-family: "Noto Sans Display", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  background-color: #1c62cd;
+  -webkit-border-radius: solid #1c62cd 100px;
+          border-radius: solid #1c62cd 100px;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.logo__img {
+  margin: 0px 98px 21px 92px;
+  width: 80px;
+  height: 76px;
+  left: 920px;
+  top: 25px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 1171px;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "SFProDisplay", sans-serif;
+  src: url("../fonts/SFProDisplay-Regular.woff2") format("woff2"), url("../fonts/SFProDisplay-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SFProDisplay", sans-serif;
+  src: url("../fonts/SFProDisplay-Medium.woff2") format("woff2"), url("../fonts/SFProDisplay-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SFProDisplay", sans-serif;
+  src: url("../fonts/SFProDisplay-Semibold.woff2") format("woff2"), url("../fonts/SFProDisplay-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SFProDisplay", sans-serif;
+  src: url("../fonts/SFProDisplay-Bold.woff2") format("woff2"), url("../fonts/SFProDisplay-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+.nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 53px;
+}
+
+.nav__top-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Noto Sans Display", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.nav__top-item + .nav__top-item {
+  padding-left: 50px;
+}
+
+.nav__top-link {
+  text-decoration: none;
+  color: #2f3035;
+  padding: 15px 0 14px;
+  text-decoration: none;
+  -webkit-transition: font-weight 0.3s;
+  -o-transition: font-weight 0.3s;
+  transition: font-weight 0.3s;
+}
+/*# sourceMappingURL=main.min.css.map */
