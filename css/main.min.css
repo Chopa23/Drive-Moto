@@ -7,7 +7,7 @@
 .header__inner {
   font-family: "Noto Sans Display", sans-serif;
   font-weight: 700;
-  background-color: antiquewhite;
+  width: 1171px;
 }
 
 .header__top {
@@ -15,6 +15,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
 }
 
 .header__address {
@@ -28,7 +29,7 @@
   font-weight: bold;
   font-size: 18px;
   padding-left: 30px;
-  padding-right: 86px;
+  padding-right: 128px;
   font-family: "Noto Sans Display", sans-serif;
 }
 
@@ -52,19 +53,17 @@
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 10px 0 0;
 }
 
 .header__user-list {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-left: 0;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
   margin-right: 0;
   list-style: none;
   font-family: "Noto Sans Display", sans-serif;
@@ -75,26 +74,27 @@
   text-align: center;
 }
 
-.header__user-list__link {
-  padding: 0;
-}
-
-.header__user-list-item {
+.header__user-item {
   margin: 0 10px 0 0;
   width: 24px;
   height: 24px;
-  padding-right: 0px;
 }
 
-.header__user span {
+.header__user-item + .header__user-item {
+  padding-right: 10px;
+}
+
+.header__top-span {
+  padding: 0 10px 0 10px;
+  margin-top: 10px;
   font-family: "Noto Sans Display", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 10px;
-  line-height: 12px;
+  color: #fff;
   background-color: #1c62cd;
-  -webkit-border-radius: solid #1c62cd 100px;
-          border-radius: solid #1c62cd 100px;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
 }
 
 .logo {
@@ -118,6 +118,73 @@
   height: 76px;
   left: 920px;
   top: 25px;
+}
+
+.header__bottom {
+  background-color: #F0F0F4;
+  height: 53px;
+  padding: 15px 0 14px 0;
+}
+
+.header__bottom-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__bottom-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  list-style: none;
+  font-family: "Noto Sans Display", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.header__bottom-item + .header__bottom-item {
+  padding-left: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+
+.header__bottom-link {
+  text-decoration: none;
+  color: #2f3035;
+  text-decoration: none;
+  -webkit-transition: font-weight 0.3s;
+  -o-transition: font-weight 0.3s;
+  transition: font-weight 0.3s;
+}
+
+.header__bottom-link:hover {
+  font-weight: bold;
+  font-size: 18px;
+  border-bottom: 3px solid #1c62cd;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .container {
@@ -181,9 +248,6 @@ html {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;

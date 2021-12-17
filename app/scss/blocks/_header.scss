@@ -3,13 +3,15 @@
 .header {
   margin: 0 auto;
   padding: 0;
+
   &__inner {
     font-family: $main-font;
     font-weight: 700;
-    background-color: antiquewhite;
+    width: 1171px;
   }
   &__top {
     display: flex;
+    width: 100%;
   }
 
   &__address {
@@ -21,7 +23,7 @@
     font-weight: bold;
     font-size: 18px;
     padding-left: 30px;
-    padding-right: 86px;
+    padding-right: 128px;
     font-family: $main-font;
 
     &::before {
@@ -39,12 +41,12 @@
 .header__user {
   display: flex;
   align-items: center;
-  margin: 0 10px 0 0;
 
   &-list {
+    position: relative;
+
     display: flex;
-    justify-content: flex-end;
-    margin-left: 0;
+    justify-content: space-around;
     margin-right: 0;
     list-style: none;
     font-family: $main-font;
@@ -53,35 +55,30 @@
     font-size: 20px;
     line-height: 24px;
     text-align: center;
-
-    &__link {
-      padding: 0;
-    }
-
-    &-item {
-      margin: 0 10px 0 0;
-
-      width: 24px;
-      height: 24px;
-      padding-right: 0px;
-    }
-
-    // &__user-item + &__user-item {
-    //   padding-right: 100px;
-    // }
   }
-
-  & span {
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 10px;
-    line-height: 12px;
-    background-color: $accent;
-    border-radius: solid $accent 100px;
+  &-item {
+    margin: 0 10px 0 0;
+    width: 24px;
+    height: 24px;
+  }
+  &-item + &-item {
+    padding-right: 10px;
   }
 }
+.header__top-span {
+  padding: 0 10px 0 10px;
+  margin-top: 10px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
 
+  // line-height: -52px;
+  color: #fff;
+  background-color: $accent;
+  // padding: 1px 5px;
+  border-radius: 100%;
+}
 .logo {
   display: flex;
   align-items: center;
@@ -96,3 +93,75 @@
     top: 25px;
   }
 }
+.header__bottom {
+  background-color: $nav-bg;
+  height: 53px;
+  padding: 15px 0 14px 0;
+
+  &-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &-list {
+    display: flex;
+    margin: 0;
+
+    list-style: none;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+  &-item + &-item {
+    padding-left: 60px;
+    display: flex;
+    justify-content: space-around;
+  }
+  &-link {
+    text-decoration: none;
+    color: $font-color;
+    text-decoration: none;
+    transition: font-weight 0.3s;
+
+    &:hover {
+      font-weight: bold;
+      font-size: 18px;
+      border-bottom: 3px solid $accent;
+      transition: all 0.3s;
+    }
+  }
+}
+// .clicked-menu {
+//   //  &::after {
+//   //    position: absolute;
+//   //    width: 0;
+//   //    height: 3px;
+//   //    left: auto;
+//   //    right: 0;
+//   //    bottom: -5px;
+//   //    background-color: $accent;
+//   //    content: "";
+//   //    transition: all 0.3s;
+//   //  }
+//   //  &:hover {
+//   //    &::after {
+//   //      width: 100%;
+//   //      right: auto;
+//   //      left: 0;
+//   //    }
+//   //  }
+//   //  &__link--active::after {
+//   //    position: absolute;
+//   //    width: 100%;
+//   //    height: 3px;
+//   //    bottom: -5px;
+//   //    background-color: $accent;
+//   //  }
+// }
