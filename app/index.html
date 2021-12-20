@@ -5,7 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Drive-Moto</title>
-    <link rel="stylesheet" href="
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/slick.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -94,7 +100,126 @@
         </div>
       </div>
     </div>
+    <section class="banner">
+      <div class="container">
+        <div class="banner__inner">
+          <div class="banner__slider">
+            <div class="banner__slider-item">
+              <a href="#" class="banner__slider-link">
+                <img
+                  src="images/uploads/слайдер баннер.jpg"
+                  alt="Slide"
+                  class="banner__slider-img"
+                />
+              </a>
+            </div>
+            <div class="banner__slider-item">
+              <a href="#" class="banner__slider-link">
+                <img
+                  src="images/uploads/слайдер баннер.jpg"
+                  alt="Slide"
+                  class="banner__slider-img"
+                />
+              </a>
+            </div>
+            <div class="banner__slider-item">
+              <a href="#" class="banner__slider-link">
+                <img
+                  src="images/uploads/слайдер баннер.jpg"
+                  alt="Slide"
+                  class="banner__slider-img"
+                />
+              </a>
+            </div>
+            <div class="banner__slider-item">
+              <a href="#" class="banner__slider-link">
+                <img
+                  src="images/uploads/слайдер баннер.jpg"
+                  alt="Slide"
+                  class="banner__slider-img"
+                />
+              </a>
+            </div>
+          </div>
+          <a href="#" class="banner__sale">
+            <div class="banner__sale-top">
+              <div class="banner__sale-info">Акция</div>
+              <div class="banner__sale-price">
+                <span class="banner__sale-price-new"> 190 000 </span>
+                <span class="banner__sale-price-old price__old"> 225 000 </span>
+              </div>
+            </div>
+            <img
+              src="images/uploads/438d21d0914ff349e903072c903b7b8a 1.png"
+              alt="Sale"
+              class="banner__sale-img"
+            />
+            <h4 class="banner__sale-title">Лодочный мотор Suzuki DF9.9BRS</h4>
+            <p class="banner__sale-descr">
+              Акция действует до
+              <span class="banner__sale-date">31.08.2020</span>
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
 
+    <section class="search">
+      <div class="container">
+        <div class="search__inner">
+          <div class="search__tabs">
+            <a
+              href="#tab-1"
+              class="search__tabs-item tabs__tab tabs__tab--active"
+              >Поиск по номеру</a
+            >
+            <a href="#tab-2" class="search__tabs-item tabs__tab"
+              >Поиск по марке</a
+            >
+            <a href="#tab-3" class="search__tabs-item tabs__tab"
+              >Поиск по названию товара</a
+            >
+          </div>
+          <div class="search__content">
+            <div
+              class="search__content-item tabs__content tabs__content--active"
+              id="tab-1"
+            >
+              <form class="search__form">
+                <input
+                  class="search__input"
+                  type="text"
+                  placeholder="Введите номер"
+                />
+                <button class="search__btn">Искать</button>
+              </form>
+            </div>
+            <div class="search__content-item tabs__content" id="tab-2">
+              <form class="search__form">
+                <input
+                  class="search__input"
+                  type="text"
+                  placeholder="Введите марку"
+                />
+                <button class="search__btn">Искать</button>
+              </form>
+            </div>
+            <div class="search__content-item tabs__content" id="tab-3">
+              <form class="search__form">
+                <input
+                  class="search__input"
+                  type="text"
+                  placeholder="Введите название товара"
+                />
+                <button class="search__btn">Искать</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
