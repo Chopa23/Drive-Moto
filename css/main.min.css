@@ -286,6 +286,14 @@ html {
   transition: font-weight 0.3s;
 }
 
+.banner-full {
+  margin-bottom: 72px;
+}
+
+.banner-full__img {
+  width: 100%;
+}
+
 .banner {
   margin-bottom: 77px;
   margin-top: 78px;
@@ -316,10 +324,11 @@ html {
 .banner-slider-btn {
   position: absolute;
   top: 50%;
+  right: 20px;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  background-color: #ff0000;
+  background-color: transparent;
   border: none;
   margin: 0;
   padding: 0;
@@ -329,7 +338,7 @@ html {
 
 .banner-slider-btn-prev {
   left: 20px;
-  background-color: red;
+  background-color: transparent;
 }
 
 .banner-slider-btn-next {
@@ -363,6 +372,11 @@ html {
           border-radius: 50%;
   background-color: transparent;
   cursor: pointer;
+}
+
+.banner .slick-list {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .banner .slick-dots .slick-active button {
