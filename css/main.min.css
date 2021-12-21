@@ -319,7 +319,7 @@ html {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  background-color: transparent;
+  background-color: #ff0000;
   border: none;
   margin: 0;
   padding: 0;
