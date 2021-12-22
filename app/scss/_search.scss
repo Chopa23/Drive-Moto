@@ -1,1 +1,61 @@
 @import "vars";
+
+.search {
+  margin-bottom: 80px;
+
+  &__tabs {
+    margin-bottom: 25px;
+  }
+
+  &__tabs-item {
+    padding: 11px 26px 12px;
+    text-decoration: none;
+  }
+
+  &__tabs-item.tabs__tab--active {
+    border-radius: 5px;
+    background-color: $nav-bg;
+    font-weight: 700;
+  }
+
+  &__content-item {
+    display: none;
+  }
+
+  &__content-item.tabs__content--active {
+    display: block;
+  }
+
+  &__form {
+    display: flex;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 5px 20px;
+    font-size: 16px;
+    line-height: 19px;
+    background-color: $nav-bg;
+    color: $font-color;
+    border-radius: 3px;
+    border: none;
+
+    &::placeholder {
+      color: $placeholder-color;
+    }
+  }
+
+  &__btn {
+    margin-left: 3px;
+    padding: 17px 41px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: $light;
+    background-color: $accent;
+    border-radius: 3px;
+    border: none;
+  }
+}
