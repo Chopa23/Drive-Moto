@@ -172,15 +172,20 @@
 .header__bottom-link {
   text-decoration: none;
   color: #2f3035;
-  text-decoration: none;
-  -webkit-transition: font-weight 0.3s;
-  -o-transition: font-weight 0.3s;
-  transition: font-weight 0.3s;
+  padding-bottom: 13px;
+}
+
+.header__bottom-link__link--active::after {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #1c62cd;
 }
 
 .header__bottom-link:hover {
-  font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
+  bottom: -35px;
+  color: #1c62cd;
   border-bottom: 3px solid #1c62cd;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -206,7 +211,6 @@ body,
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: yellowgreen;
 }
 
 @font-face {
@@ -459,7 +463,7 @@ html {
 .banner__sale-price-old {
   position: relative;
   margin-right: 3px;
-  padding-right: 18px;
+  padding-right: 23px;
   font-size: 14px;
   line-height: 17px;
   color: #c4c4c4;
@@ -480,11 +484,11 @@ html {
 
 .banner__sale-price-old::after {
   position: absolute;
-  right: 0;
+  right: 10px;
   top: 5px;
   width: 8px;
   height: 10px;
-  background-image: url("../images/icons8-рубль-50.svg");
+  background-image: url("../images/Union.svg");
   content: "";
 }
 
@@ -518,5 +522,163 @@ html {
   font-family: #c4c4c4;
   font-weight: 700;
   color: #1c62cd;
+}
+
+.search {
+  margin-bottom: 80px;
+}
+
+.search__tabs {
+  margin-bottom: 25px;
+}
+
+.search__tabs-item {
+  padding: 11px 26px 12px;
+  text-decoration: none;
+}
+
+.search__tabs-item.tabs__tab--active {
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  background-color: #f0f0f4;
+  font-weight: 700;
+}
+
+.search__content-item {
+  display: none;
+}
+
+.search__content-item.tabs__content--active {
+  display: block;
+}
+
+.search__form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.search__input {
+  width: 100%;
+  padding: 5px 20px;
+  font-size: 16px;
+  line-height: 19px;
+  background-color: #f0f0f4;
+  color: #2f3035;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  border: none;
+}
+
+.search__input::-webkit-input-placeholder {
+  color: #656464;
+}
+
+.search__input:-ms-input-placeholder {
+  color: #656464;
+}
+
+.search__input::-ms-input-placeholder {
+  color: #656464;
+}
+
+.search__input::placeholder {
+  color: #656464;
+}
+
+.search__btn {
+  margin-left: 3px;
+  padding: 17px 41px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #1c62cd;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  border: none;
+}
+
+.categories {
+  margin-bottom: 80px;
+}
+
+.categories__inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 2fr 2fr;
+      grid-template-columns: 2fr 2fr 2fr;
+  grid-gap: 30px;
+}
+
+.categories__item {
+  display: -ms-grid;
+  display: grid;
+  width: 370px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  border: 1px solid #cdcdcd;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.categories__item:hover {
+  -webkit-box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+          box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+}
+
+.categories__title {
+  padding: 20px 20px 52px 20px;
+  color: #2f3035;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 28px;
+}
+
+.categories__title:hover {
+  color: #1c62cd;
+}
+
+.categories__text {
+  position: relative;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #cdcdcd;
+}
+
+.categories__text::after {
+  position: absolute;
+  margin-left: 6px;
+  top: 4px;
+  width: 6px;
+  height: 9px;
+  content: "";
+  background-image: url(/app/images/Back.svg);
+}
+
+.categories__img-wrapper {
+  position: relative;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.categories__img {
+  padding-top: 25px;
+  max-width: 100%;
 }
 /*# sourceMappingURL=main.min.css.map */
