@@ -9,6 +9,16 @@ $(function () {
       '<button class="banner-slider-btn banner-slider-btn-next"><img src="images/right.svg" alt=""></button>',
   });
 
+  $(".products__slider").slick({
+    dots: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    prevArrow:
+      '<button class="products__slider-btn produsts__slider-btn-prev banner__slider-btn-prev"><img src="images/left.svg" alt=""></button>',
+    nextArrow:
+      '<button class="products__slider-btn products__slider-btn-next banner__slider-btn-next"><img src="images/right.svg" alt=""></button>',
+  });
+
   const tabs = $(".tabs__tab");
 
   tabs.on("click", function (e) {
