@@ -1,0 +1,40 @@
+@import "vars";
+.sale {
+  margin-bottom: 72px;
+
+  &__inner {
+    margin: 0 auto;
+    //  padding: 0 72px;
+    width: 1211px;
+    height: 165px;
+    display: flex;
+    background-color: $accent;
+  }
+  &__img {
+    padding: 33px 45px 19px 71px;
+  }
+  &__description {
+    max-width: 308px;
+    padding: 28px 0 28px 46px;
+    &-title {
+      font-family: $main-font;
+      width: 308px;
+      height: 108px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 36px;
+      color: #ffffff;
+    }
+  }
+  &__btn-more {
+    padding: 54px 123px 54px 11px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: right;
+
+    color: #2f3035;
+  }
+}
