@@ -2,6 +2,10 @@
 
 .products {
   margin-bottom: 86px;
+  &__inner {
+    max-width: 1240px;
+  }
+
   &__title {
     margin: 0 0 25px;
     font-family: $secondary-font;
@@ -195,14 +199,6 @@
     color: $accent;
   }
 
-  &__slider-btn-prev {
-    left: -40px;
-  }
-
-  &__slider-btn-next {
-    right: -20px;
-  }
-
   &__item-more {
     text-align: center;
     margin-top: 35px;
@@ -231,30 +227,7 @@
     &__slider-link {
       width: 100%;
       height: 400px;
-      // object-fit: cover;
-    }
-
-    &-slider-btn {
-      position: absolute;
-      top: 50%;
-      right: 20px;
-      transform: translateY(-50%);
-      background-color: transparent;
-      border: none;
-      margin: 0;
-      padding: 0;
-      z-index: 1;
-      cursor: pointer;
-    }
-
-    &-slider-btn-prev {
-      left: -20px;
-      background-color: transparent;
-      border: none;
-    }
-
-    &-slider-btn-next {
-      right: -20px;
+      object-fit: cover;
     }
 
     & .slick-dots {
@@ -291,4 +264,44 @@
       background-color: $light;
     }
   }
+  &__slider-btn-prev {
+    left: -40px;
+  }
+
+  &__slider-btn-next {
+    right: -20px;
+  }
+
+  &__btn-more {
+    margin: auto;
+    padding-top: 35px;
+    text-align: center;
+  }
+  &__btn-more a {
+    margin: 0 auto;
+    text-decoration: none;
+    font-family: $main-font;
+
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: $font-color;
+    max-width: 252px;
+    background-color: $nav-bg;
+    padding: 17px 44px;
+  }
+  // &-slider-btn {
+  //   position: absolute;
+  //   top: 50%;
+  //   right: 20px;
+  //   transform: translateY(-50%);
+  //   background-color: transparent;
+  //   border: none;
+  //   margin: 0;
+  //   padding: 0;
+  //   z-index: 1;
+  //   cursor: pointer;
+  // }
 }

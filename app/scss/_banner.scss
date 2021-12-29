@@ -37,10 +37,13 @@
   &-slider-btn-prev {
     left: 20px;
     background-color: transparent;
+    border: none;
   }
 
   &-slider-btn-next {
     right: 20px;
+    background-color: transparent;
+    border: none;
   }
 
   & .slick-dots {
