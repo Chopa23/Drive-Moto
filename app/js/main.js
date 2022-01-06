@@ -14,9 +14,9 @@ $(function () {
     slidesToShow: 4,
     slidesToScroll: 1,
     prevArrow:
-      '<button class="products-slider-btn produsts-slider-btn-prev banner-slider-btn-prev"><img src="images/dark-left.svg" alt=""></button>',
+      '<button class="products-slider-btn products-slider-btn-prev "><img src="images/dark-left.svg" alt=""></button>',
     nextArrow:
-      '<button class="products-slider-btn products-slider-btn-next banner-slider-btn-next"><img src="images/dark-right.svg" alt=""></button>',
+      '<button class="products-slider-btn products-slider-btn-next "><img src="images/dark-right.svg" alt=""></button>',
   });
 
   const tabs = $(".tabs__tab");
