@@ -3,11 +3,13 @@
 .products {
   margin-bottom: 86px;
   &__inner {
-    max-width: 1240px;
+    width: 1171px;
+    margin: 0 auto;
   }
 
   &__title {
     margin: 0 0 25px;
+    padding-left: 10px;
     font-family: $secondary-font;
     font-style: normal;
     font-weight: bold;
@@ -16,15 +18,17 @@
   }
   &__slider {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   &__tabs {
     margin-bottom: 25px;
+    padding-left: 10px;
   }
 
   &__tab {
     border-bottom: 2px solid transparent;
+    margin-right: 50px;
     padding-bottom: 10px;
     text-decoration: none;
     color: $font-color;
@@ -42,16 +46,18 @@
     border-bottom: 2px solid $accent;
   }
 
-  &__tab + &__tab {
-    margin-left: 50px;
-  }
+  // &__tab + &__tab {
+  //   margin-left: 50px;
+  // }
 
   &__item {
     position: relative;
     width: 270px;
     min-height: 420px;
-    padding: 52px 20px 31px;
+    margin: auto;
+    padding: 52px 20px 31px 20px;
     text-align: center;
+    align-items: center;
     border: 1px solid $border-color;
     transition: all 0.3s;
   }
@@ -224,6 +230,7 @@
   }
 
   &__slider {
+    justify-content: space-between;
     &__slider-link {
       width: 100%;
       height: 400px;
@@ -264,24 +271,15 @@
       background-color: $light;
     }
   }
-  &__slider-btn-prev {
-    left: -40px;
-  }
-
-  &__slider-btn-next {
-    right: -20px;
-  }
 
   &__btn-more {
-    margin: auto;
+    margin: 0 auto;
     padding-top: 35px;
     text-align: center;
   }
   &__btn-more a {
-    margin: 0 auto;
     text-decoration: none;
     font-family: $main-font;
-
     font-size: 15px;
     line-height: 18px;
     text-align: center;
@@ -292,16 +290,29 @@
     background-color: $nav-bg;
     padding: 17px 44px;
   }
-  // &-slider-btn {
-  //   position: absolute;
-  //   top: 50%;
-  //   right: 20px;
-  //   transform: translateY(-50%);
-  //   background-color: transparent;
-  //   border: none;
-  //   margin: 0;
-  //   padding: 0;
-  //   z-index: 1;
-  //   cursor: pointer;
-  // }
+
+  &-slider-btn {
+    position: absolute;
+    top: 50%;
+    // right: -20px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  &-slider-btn-prev {
+    margin-left: -20px;
+    background-color: transparent;
+    border: none;
+  }
+
+  &-slider-btn-next {
+    right: -20px;
+    background-color: transparent;
+    border: none;
+  }
 }
