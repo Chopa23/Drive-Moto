@@ -18,13 +18,13 @@
   &__address {
     position: relative;
     align-items: center;
-    // width: 265px;
+    // width: 150px;
     font-family: $main-font;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     padding-left: 30px;
-    padding-right: 110px;
+    padding-right: 100px;
     font-family: $main-font;
 
     &::before {
@@ -149,29 +149,29 @@
   }
 }
 // .clicked-menu {
-//   //  &::after {
-//   //    position: absolute;
-//   //    width: 0;
-//   //    height: 3px;
-//   //    left: auto;
-//   //    right: 0;
-//   //    bottom: -5px;
-//   //    background-color: $accent;
-//   //    content: "";
-//   //    transition: all 0.3s;
-//   //  }
-//   //  &:hover {
-//   //    &::after {
-//   //      width: 100%;
-//   //      right: auto;
-//   //      left: 0;
-//   //    }
-//   //  }
-//   //  &__link--active::after {
-//   //    position: absolute;
-//   //    width: 100%;
-//   //    height: 3px;
-//   //    bottom: -5px;
-//   //    background-color: $accent;
-//   //  }
+//  &::after {
+//    position: absolute;
+//    width: 0;
+//    height: 3px;
+//    left: auto;
+//    right: 0;
+//    bottom: -5px;
+//    background-color: $accent;
+//    content: "";
+//    transition: all 0.3s;
+//  }
+//  &:hover {
+//    &::after {
+//      width: 100%;
+//      right: auto;
+//      left: 0;
+//    }
+//  }
+//  &__link--active::after {
+//    position: absolute;
+//    width: 100%;
+//    height: 3px;
+//    bottom: -5px;
+//    background-color: $accent;
+//  }
 // }
