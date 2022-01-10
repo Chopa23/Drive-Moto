@@ -1054,7 +1054,7 @@ a {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 29px;
+  grid-gap: 20px;
 }
 
 .sale {
@@ -1286,7 +1286,7 @@ a {
 }
 
 .catalog {
-  margin-bottom: 47px;
+  margin-bottom: 100px;
 }
 
 .catalog__title {
